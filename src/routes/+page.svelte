@@ -19,7 +19,11 @@
 
   {#each data.data as item (item.number)}
     <div class="p-4 mb-4 bg-white border border-black" role="button">
-      <a href={`/surah/${item.number}`} class="font-bold">
+      <a href={`/surah/${item.number}`} class="flex items-center gap-2 font-bold">
+        <div class="relative flex items-center justify-center w-14 h-14 number-wrapper">
+          <img alt='number' src='/hexagram.png' class='w-full h-full' loading="lazy" />
+          <p class="absolute text-sm number">{item.number}</p>
+        </div>
         {item.name}
       </a>
     </div>

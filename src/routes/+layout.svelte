@@ -1,11 +1,10 @@
 <script>
+  import Navbar from "../components/Navbar/Navbar.svelte";
   import "../app.css";
 </script>
 
 <div class="w-full h-full bg-violet-100">
-  <nav class="fixed z-10 flex items-center justify-center w-full bg-white border-b-2 border-black h-14">
-    <a href='/' class="text-lg font-bold">Qur'an Indo</a>
-  </nav>
+  <Navbar />
 
   <div class="max-w-xl mx-auto">
     <slot />
