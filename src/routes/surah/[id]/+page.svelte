@@ -8,7 +8,7 @@
 <section id="surah" class="h-full p-4">
   <div class="mt-20"></div>
 
-  <div class="relative flex flex-col items-center justify-center h-56 mb-10 overflow-hidden text-center bg-violet-600" id="surah-intro">
+  <div class="relative flex flex-col items-center justify-center h-56 mb-10 overflow-hidden text-center bg-violet-600 shadow-skew" id="surah-intro">
     <div class="surah-title">
       <p class="text-xl text-white pb">{data?.data?.name}</p>
       <p class="italic text-white text-md">"{data?.data?.translation}"</p>

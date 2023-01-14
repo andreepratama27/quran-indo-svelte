@@ -1,6 +1,6 @@
 import { derived, writable } from 'svelte/store'
 
-export function createUrlStore(ssrUrl = '') {
+export function createUrlStore(ssrUrl) {
   // Ideally a bundler constant so that it's tree-shakable
   if (typeof window === 'undefined') {
     const { subscribe } = writable(ssrUrl)
