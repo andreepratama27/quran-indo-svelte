@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fontsource/poppins': ^4.5.10
   '@sveltejs/adapter-auto': ^1.0.0
   '@sveltejs/adapter-vercel': next
   '@sveltejs/kit': ^1.0.0
@@ -22,6 +23,7 @@ specifiers:
   vite: ^4.0.0
 
 dependencies:
+  '@fontsource/poppins': 4.5.10
   dotenv: 16.0.3
 
 devDependencies:
@@ -260,6 +262,10 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@fontsource/poppins/4.5.10:
+    resolution: {integrity: sha512-oYZVHsnlwV3VWM1SE/m6SUxVh0QLk5+2wB+lBiXcI7N/0KVQWmV9YykaPqfJHBLvmdya+MAOnv+BQHeLU1vOOw==}
+    dev: false
 
   /@humanwhocodes/config-array/0.11.8:
     resolution: {integrity: sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g==}
