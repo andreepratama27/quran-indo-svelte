@@ -1,4 +1,5 @@
 <script lang="ts">
+	import TodayVerse from '../components/TodayVerse/TodayVerse.svelte';
   import Jumbotron from '../components/Jumbotron/Jumbotron.svelte';
   import type { PageData } from './$types';
 
@@ -6,7 +7,10 @@
 </script>
 
 <section class="p-4">
-  <Jumbotron />
+  <div class="mt-20"></div>
+
+  <TodayVerse />
+  <!-- <Jumbotron /> -->
 
   {#each data.data as item (item.number)}
     <div class="p-4 mb-4 bg-white border border-black" role="button">
