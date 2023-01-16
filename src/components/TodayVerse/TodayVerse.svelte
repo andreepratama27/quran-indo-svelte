@@ -42,7 +42,7 @@
   })
 </script>
 
-<div class="relative flex flex-col items-center justify-center h-56 mb-10 overflow-hidden text-center bg-violet-600 shadow-skew" id="surah-intro">
+<div class="relative flex flex-col items-center justify-center min-h-56 mb-10 overflow-hidden text-center bg-violet-600 shadow-skew py-4 px-2" id="surah-intro">
   <div class="surah-title relative -top-1">
     <p class="text-xl text-white pb font-bold">Ayat Hari Ini</p>
 
