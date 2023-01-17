@@ -1,13 +1,14 @@
 <script lang="ts">
+	import { onDestroy } from "svelte";
+
+
   export let data: any;
   let isPlaying: boolean = false;
   let audio = new Audio(data?.data?.audio)
 
   function playAudio() {
-    isPlaying = true;
-    console.log('fff', data)
-
     audio.play();
+    isPlaying = true;
   }
 
   function pauseAudio() {
@@ -17,6 +18,11 @@
 
     isPlaying = false;
   }
+
+  onDestroy(() => {
+    audio.pause();
+    audio.currentTime = 0;
+  })
 </script>
 
 <div class="relative flex flex-col items-center justify-center h-56 mb-10 overflow-hidden text-center bg-violet-600 shadow-skew" id="surah-intro">

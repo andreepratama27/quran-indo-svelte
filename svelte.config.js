@@ -13,7 +13,11 @@ const config = {
 			edge: false,
 			external: [],
 			split: false,
-		})
+    }),
+
+    alias: {
+      '@': './src/'
+    }
 	}
 };
 
