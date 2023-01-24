@@ -9,7 +9,7 @@
 
 </script>
 
-<div class="p-4 mb-4 flex justify-between items-center shadow-skew bg-white border border-black" role="button">
+<div class="p-4 mb-6 flex justify-between items-center shadow-skew bg-white border border-black" role="button">
   <a href={`/surah/${data.number}`} class="flex items-center gap-2 font-bold">
     <div class="relative flex items-center justify-center w-14 h-14 number-wrapper">
       <img alt='number' src='/hexagram.png' class='w-full h-full' loading="lazy" />

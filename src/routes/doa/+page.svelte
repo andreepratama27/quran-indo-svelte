@@ -4,7 +4,7 @@
   export let data: PageData;
 </script>
 
-<section class="p-4">
+<section class="p-4 bg-violet-100">
   <div class="mt-20"></div>
 
   <div id="menu" class='h-full'>
@@ -16,7 +16,7 @@
   </div>
 
   {#each data.data as item (item.id)}
-    <div class="p-4 mb-4 flex flex-col shadow-skew bg-white border border-black" role="button">
+    <div class="p-4 mb-6 flex flex-col shadow-skew bg-white border border-black" role="button">
       <p class="title text-lg font-bold">
         {item.doa}
       </p>

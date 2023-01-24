@@ -14,7 +14,7 @@
 <div class="w-full bg-violet-100">
   <Navbar />
 
-  <div class="max-w-xl mx-auto relative">
+  <div class="max-w-xl mx-auto relative h-screen">
     <slot />
 
     <div class="pb-10"></div>

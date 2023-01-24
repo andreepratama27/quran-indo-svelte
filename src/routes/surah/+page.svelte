@@ -5,7 +5,7 @@
   export let data: PageData;
 </script>
 
-<section class="p-4">
+<section class="p-4 bg-violet-100">
   <div class="mt-20"></div>
 
   <div id="menu" class='h-full'>
