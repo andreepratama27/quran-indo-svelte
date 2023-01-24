@@ -24,3 +24,11 @@ export interface Surah {
   tafsir: Record<string, any>;
   translation: string;
 }
+
+export interface Prayer {
+  id: string;
+  artinya: string;
+  ayat: string;
+  doa: string;
+  latin: string;
+}

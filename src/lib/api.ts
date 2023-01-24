@@ -1,5 +1,7 @@
-const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT;
+const API_QURAN_ENDPOINT = import.meta.env.VITE_API_QURAN_ENDPOINT;
+const API_DOA_ENDPOINT = import.meta.env.VITE_API_DOA_ENDPOINT;
 
 export {
-  API_ENDPOINT,
+  API_QURAN_ENDPOINT,
+  API_DOA_ENDPOINT,
 };

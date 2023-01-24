@@ -1,8 +1,8 @@
-const API_URL = import.meta.env.VITE_API_ENDPOINT;
+import { API_QURAN_ENDPOINT } from "@/lib/api";
 
 export const load = async () => {
   try {
-    const response = await fetch(`${API_URL}/surahs`)
+    const response = await fetch(`${API_QURAN_ENDPOINT}/surahs`)
     const result = await response.json()
 
     return {

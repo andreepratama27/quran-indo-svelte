@@ -21,7 +21,7 @@
         </a>
       </div>
       <div class="w-full border border-black bg-white p-4 mb-4 shadow-skew" role='button'>
-        <a href="/">
+        <a href="/doa">
           <p class="title">Doa - Doa Harian</p>
         </a>
       </div>

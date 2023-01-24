@@ -9,7 +9,7 @@
   <div class="mt-20"></div>
 
   <div id="menu" class='h-full'>
-    <div class="title-wrapper pb-4">
+    <div class="title-wrapper pb-6">
       <h1 class='font-bold'>Kumpulan Surah</h1>
 
       <div class="w-28 h-1 my-2 bg-black"></div>
