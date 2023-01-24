@@ -42,8 +42,12 @@
         </button>
       {/if}
     </li>
-    <!-- <li>
-      <p class="text-violet-600">Save</p>
-    </li> -->
+    <li>
+      <p class="text-violet-600">
+        <button class='flex items-center'>
+          <img src="/bookmark.png" alt="bookmark" class='w-4 h-4'>
+        </button>
+      </p>
+    </li>
   </ul>
 </div>

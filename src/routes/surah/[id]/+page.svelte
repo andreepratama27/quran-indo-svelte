@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SurahHeader from "@/components/SurahHeader/SurahHeader.svelte";
+	import SurahHeader from "@/ui/SurahHeader/SurahHeader.svelte";
 	import VerseOptions from "./components/VerseOptions.svelte";
 
   import type { PageData } from "./$types";
