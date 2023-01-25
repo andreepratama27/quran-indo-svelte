@@ -1,34 +1,39 @@
-export interface Surah {
-  arab: string;
-  audio: Record<string, string>;
-  image: {
-    primary: string;
-    secondari: string;
-  };
-  meta: {
-    juz: number;
-    hizbQuarter: number;
-    manzil: number;
-    page: number;
-    ruku: number;
-    sajda: {
-      obligatory: boolean;
-      recommended: boolean;
-    }
-  };
-  number: {
-    inQuran: number;
-    inSurah: number;
-  };
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  tafsir: Record<string, any>;
-  translation: string;
-}
+import { z } from 'zod';
 
-export interface Prayer {
-  id: string;
-  artinya: string;
-  ayat: string;
-  doa: string;
-  latin: string;
-}
+const SurahSchema = z.object({
+  arab: z.string(),
+  audio: z.record(z.string(), z.string()),
+  image: z.object({
+    primary: z.string(),
+    secondary: z.string(),
+  }),
+  meta: z.object({
+    juz: z.number(),
+    hizbQuarter: z.number(),
+    manzil: z.number(),
+    page: z.number(),
+    ruku: z.number(),
+    sajda: z.object({
+      obligatory: z.boolean(),
+      recommended: z.boolean(),
+    })
+  }),
+  number: z.object({
+    inQuran: z.number(),
+    inSurah: z.number(),
+  }),
+  tafsir: z.record(z.string(), z.any()),
+  translation: z.string(),
+})
+
+export type Surah = z.infer<typeof SurahSchema>
+
+const PrayerSchema = z.object({
+  id: z.string(),
+  artinya: z.string(),
+  ayat: z.string(),
+  doa: z.string(),
+  latin: z.string(),
+})
+
+export type Prayer = z.infer<typeof PrayerSchema>;

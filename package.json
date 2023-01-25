@@ -34,6 +34,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/poppins": "^4.5.10",
-		"dotenv": "^16.0.3"
+		"dotenv": "^16.0.3",
+		"zod": "^3.20.2"
 	}
 }
