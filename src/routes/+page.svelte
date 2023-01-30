@@ -16,12 +16,12 @@
 
     <div class="menu-content mb-4">
       <div class="w-full border border-black bg-white p-4 mb-6 shadow-skew" role='button'>
-        <a href="/surah">
+        <a href="/surah" sveltekit:prefetch>
           <p class="title">Kumpulan Surah</p>
         </a>
       </div>
       <div class="w-full border border-black bg-white p-4 shadow-skew" role='button'>
-        <a href="/doa">
+        <a href="/doa" sveltekit:prefetch>
           <p class="title">Doa - Doa Harian</p>
         </a>
       </div>
