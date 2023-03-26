@@ -32,9 +32,9 @@
     </li> -->
 		<li>
 			{#if isPlaying}
-				<button class="text-violet-600 dark:text-slate-600" on:click={stopAudio}> Stop </button>
+				<button class="text-violet-600 dark:text-slate-500" on:click={stopAudio}> Stop </button>
 			{:else}
-				<button class="text-violet-600 dark:text-slate-600" on:click={playAudio}> Play </button>
+				<button class="text-violet-600 dark:text-slate-500" on:click={playAudio}> Play </button>
 			{/if}
 		</li>
 		<!-- <li>
